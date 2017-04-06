@@ -1,13 +1,15 @@
-<div id="top" class="home-view">
-  <header ng-controller="HomeController">
+<div id="top" class="home-view" ng-controller="HomeController">
+  <header id="top">
+    <div class="nav-background">
+    </div>
     <nav>
-      <div class="row nav-list">
-        <div class="col-xs-7 col-xs-offset-5 col-lg-6 col-lg-offset-6">
+      <div class="row flex-container">
+        <div class="col-xs-12">
           <ul>
             <li><a href="#our-story" du-smooth-scroll du-scrollspy duration='2000'>Our Story</a></li>
-            <li>Ceremony</li>
-            <li>Reception</li>
-            <li>RSVP</li>
+            <li><a href="#ceremony" du-smooth-scroll du-scrollspy duration='2000'>Ceremony</a></li>
+            <li><a href="#reception" du-smooth-scroll du-scrollspy duration='2000'>Reception</a></li>
+            <li><a href="#rsvp" du-smooth-scroll du-scrollspy duration='2000'>RSVP</a></li>
             <li>Gallery</li>
             <li>Visit Austin</li>
           </ul>
@@ -15,53 +17,79 @@
       </div>
     </nav>
   </header>
-  <hero>
-    <div class="row hero">
-      <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-        <img src="/images/hero-img.png" alt="Erin and Dustin" class="img-responsive img-full">
-      </div>
+  <div class="row hero">
+    <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+      <img src="/images/hero-img.png" alt="Erin and Dustin" class="img-responsive img-full">
     </div>
-  </hero>
+  </div>
   <main>
     <div id="countdown">
       <h2>timer goes here</h2>
     </div>
-    <div class="divider row">
-      <div class="col-xs-12">
-        <img src="/images/divider.png" class="img-responsive img-full" />
+    <div id="our-story">
+      <div class="row content">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <h2>Our Story</h2>
+          <div class="divider row">
+            <div class="col-xs-12">
+              <img src="/images/divider.png" class="img-responsive img-full" />
+            </div>
+          </div>
+          <div class="row test">
+          </div>
+          <div class="divider row">
+            <div class="col-xs-12">
+              <img src="/images/divider-flipped.png" class="img-responsive img-full" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <p>
-      5
-    </p>
-    <div id="our-story" class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <h2>Our Story</h2>
-
+    <div id="ceremony">
+      <div class="row content">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <h2>Ceremony</h2>
+          <h3 class="text-center">Thursday, September 28, 2017 | 6:00PM</h3>
+          <h4 class="text-center">Lady Bird Johnson Wildflower Center</h4>
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img src="/images/lbj-ceremony.png" class="img-responsive img-full" />
+              <h4 class="text-center"><a href="https://www.google.com/maps/place/Lady+Bird+Johnson+Wildflower+Center/@30.1854501,-97.8753999,17z/data=!3m1!4b1!4m5!3m4!1s0x864f845ae055e7c7:0x73a6f85ce9ce621!8m2!3d30.1854455!4d-97.8732112" target="_blank">Directions to LBJ Wildflower Center</a></h4>
+              <p class="text-center">Please allow at least 45 minutes for travel. Traffic conditions may not be optimal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="reception">
+      <div class="row content">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <h2>Reception</h2>
+          <div class="divider row">
+            <div class="col-xs-12">
+              <img src="/images/divider.png" class="img-responsive img-full" />
+            </div>
+          </div>
+          <div class="row test">
+          </div>
+          <div class="divider row">
+            <div class="col-xs-12">
+              <img src="/images/divider-flipped.png" class="img-responsive img-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rsvp">
+      <div class="row content">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <h2>Celebrate with us</h2>
+          <h4 class="text-center">Find yourself and click RSVP</h4>
+          <input type="text" name="lastName" value="" placeholder="Start searching by your last name">
+        </div>
+        <div class="top">
+          <h4 class="text-right apple"><a href="#top" du-smooth-scroll du-scrollspy duration='2000'>Back to top</a></h4>
+        </div>
       </div>
     </div>
   </main>

@@ -26,65 +26,211 @@ footer, header, hgroup, menu, section {
 body {
 	line-height: 1;
 	/*font-family: 'Josefin Sans', sans-serif;*/
-	font-family: 'Amatica SC', cursive;
+	font-family: 'Amatic SC', cursive;
 	/*font-family: 'Bubbler One', sans-serif;*/
 }
 ol, ul {
 	list-style: none;
 }
 
-nav {
-  background-image: url('../images/nav-bar.png');
-	height: 182px;
-	width: 100%;
-	margin-top: -60px;
-	position: absolute;
-	z-index: 1;
-	repeat: no-repeat;
-}
-
-.nav-list {
-	z-index: 95;
-	margin-top: 90px;
-}
-
-nav li {
-	display: inline;
-	padding: 10px;
-	font-size: 1.1em;
-	color: #fff;
-}
-
-nav li a {
-	color: #fff;
-}
-
-@media (min-width: @screen-lg-min) {
-	.nav-home {
-		margin-top: 475px;
+.flex-container {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+@media (min-width: 0px) {
+	.nav-background {
+		background-image: url('../images/nav-bar.png');
+		background-repeat: no-repeat;
+		height: 182px;
+		width: 100%;
+		position: absolute;
+		margin-top: -80px;
+		z-index: -1;
 	}
+
+	nav {
+		z-index: 99;
+		margin-top: 25px;
+	}
+
+	nav ul {
+		text-align: center;
+		padding: 0px;
+	}
+
 	nav li {
-		font-size: 1.3em;
+		display: inline;
+		padding: 8px;
+		font-size: 1em;
+		color: #fff;
+		white-space: nowrap;
+	}
+
+	nav a {
+		color: #fff;
+	}
+
+	nav a:hover {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	nav a:active {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	nav a:focus {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	nav a:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	h2 {
+		font-size: 3.2em;
+		text-align: center;
+		padding: 20px;
+	}
+
+	h3 {
+		font-size: 2.3em;
+		color: #990629;
+		padding: 7px;
+	}
+
+	h4 {
+		font-size: 2em;
+		padding: 5px;
+	}
+
+	p {
+		font-size: 1.1em;
+		padding: 10px 25px;
+	}
+
+	.apple {
+		color: #990629;
+	}
+
+	.apple a {
+		color: #990629;
+		text-decoration: none;
+	}
+
+	.apple a:hover {
+		color: #990629;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	.apple a:focus {
+		color: #990629;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	.apple a:active {
+		color: #990629;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	.hero {
+		z-index: 0;
+		margin-top: -5px;
+	}
+
+	#countdown {
+		padding: 60px 0;
+		margin-bottom: 200px;
+	}
+
+	#our-story, #reception {
+		height: 1080px;
+		background-image: url('../images/div-background.png');
+		background-size: cover;
+		color: #fff;
+		padding: 100px 15px 80px 15px;
+	}
+
+	#ceremony, #rsvp {
+		height: 1080px;
+		padding: 0px 15px;
+	}
+
+	#ceremony h4 a {
+		color: #990629;
+		text-decoration: none;
+	}
+
+	#ceremony h4 a:hover {
+		color: #990629;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	#ceremony h4 a:active {
+		color: #990629;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	#ceremony h4 a:focus {
+		color: #990629;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	#ceremony h4 a:visited {
+		color: #990629;
+		text-decoration: none;
+	}
+
+	#rsvp h4 {
+		color: #990629;
+	}
+
+	.content {
+		margin-top: 70px;
+	}
+
+	.test {
+		height: 400px;
+	}
+
+}
+
+@media only screen and (min-width: 620px) {
+	nav ul li {
+		font-size: 1.2em;
+		padding: 18px;
 	}
 }
 
-h2 {
-	font-size: 48px;
-	text-align: center;
+@media only screen and (min-width: 992px) {
+	nav ul li {
+		font-size: 1.5em;
+		padding: 25px;
+	}
 }
 
-.hero {
-	z-index: -1;
-}
-
-#countdown {
-	padding: 40px 0;
-}
-
-#our-story {
-	margin-top: 20px;
-	background-image: url('../images/div-background.png');
-	background-size: cover;
-	color: #fff;
-	padding: 120px 15px;
+@media only screen and (min-width: 1200px) {
+	nav ul li {
+		font-size: 1.8em;
+		padding: 32px;
+	}
 }
