@@ -1,0 +1,90 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-family: 'Amatica SC', cursive;
+	/*font-family: 'Bubbler One', sans-serif;*/
+}
+ol, ul {
+	list-style: none;
+}
+
+nav {
+  background-image: url('../images/nav-bar.png');
+	height: 182px;
+	width: 100%;
+	margin-top: -60px;
+	position: absolute;
+	z-index: 1;
+	repeat: no-repeat;
+}
+
+.nav-list {
+	z-index: 95;
+	margin-top: 90px;
+}
+
+nav li {
+	display: inline;
+	padding: 10px;
+	font-size: 1.1em;
+	color: #fff;
+}
+
+nav li a {
+	color: #fff;
+}
+
+@media (min-width: @screen-lg-min) {
+	.nav-home {
+		margin-top: 475px;
+	}
+	nav li {
+		font-size: 1.3em;
+	}
+}
+
+h2 {
+	font-size: 48px;
+	text-align: center;
+}
+
+.hero {
+	z-index: -1;
+}
+
+#countdown {
+	padding: 40px 0;
+}
+
+#our-story {
+	margin-top: 20px;
+	background-image: url('../images/div-background.png');
+	background-size: cover;
+	color: #fff;
+	padding: 120px 15px;
+}
