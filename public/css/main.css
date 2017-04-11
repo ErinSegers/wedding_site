@@ -24,10 +24,15 @@ footer, header, hgroup, menu, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.1;
 	/*font-family: 'Josefin Sans', sans-serif;*/
-	font-family: 'Amatic SC', cursive;
+	/*font-family: 'Amatic SC', cursive;*/
 	/*font-family: 'Bubbler One', sans-serif;*/
+	/*font-family: 'Annie Use Your Telescope', cursive;*/
+	/*font-family: 'Pompiere', cursive;*/
+	font-family: 'Flamenco', cursive;
+	font-weight: 300;
+	font-size: 1.2em;
 }
 ol, ul {
 	list-style: none;
@@ -43,7 +48,9 @@ ol, ul {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+		justify-content: center;
+}
+
 @media (min-width: 0px) {
 	.nav-background {
 		background-image: url('../images/nav-bar.png');
@@ -52,12 +59,13 @@ ol, ul {
 		width: 100%;
 		position: absolute;
 		margin-top: -80px;
-		z-index: -1;
+		z-index: 0;
 	}
 
 	nav {
 		z-index: 99;
 		margin-top: 25px;
+		font-family: 'Amatica SC', cursive;
 	}
 
 	nav ul {
@@ -100,26 +108,50 @@ ol, ul {
 		text-decoration: none;
 	}
 
-	h2 {
-		font-size: 3.2em;
+	.behind {
+		z-index: -1;
+	}
+
+	h1 {
+		font-size: 3.3em;
 		text-align: center;
-		padding: 20px;
+		padding-top: 20px;
+		font-family: 'Amatica SC', cursive;
+	}
+
+	h2 {
+		font-size: 3em;
+		text-align: center;
+		padding-top: 20px;
+		font-family: 'Amatica SC', cursive;
 	}
 
 	h3 {
-		font-size: 2.3em;
-		color: #990629;
+		font-size: 2.2em;
 		padding: 7px;
+		font-family: 'Amatica SC', cursive;
 	}
 
 	h4 {
 		font-size: 2em;
 		padding: 5px;
+		font-family: 'Amatica SC', cursive;
+	}
+
+	h5 {
+		font-size: 1.6em;
+		padding: 5px;
+		font-family: 'Amatica SC', cursive;
 	}
 
 	p {
 		font-size: 1.1em;
 		padding: 10px 25px;
+		line-height: 1.3em;
+	}
+
+	.heavy {
+		font-weight: 500;
 	}
 
 	.apple {
@@ -155,21 +187,35 @@ ol, ul {
 	}
 
 	#countdown {
-		padding: 60px 0;
+		padding: 40px 0;
 		margin-bottom: 200px;
 	}
 
+	#countdown h3 {
+		text-align: center;
+		display: block;
+	}
+
 	#our-story, #reception {
-		height: 1080px;
+		min-height: 1080px;
 		background-image: url('../images/div-background.png');
 		background-size: cover;
+		background-color: #990629;
 		color: #fff;
 		padding: 100px 15px 80px 15px;
 	}
 
-	#ceremony, #rsvp {
-		height: 1080px;
+	#our-story h3 {
+		color: #ffffff;
+	}
+
+	#ceremony {
+		height: auto;
 		padding: 0px 15px;
+	}
+
+	#ceremony h3 {
+		color: #990629;
 	}
 
 	#ceremony h4 a {
@@ -200,37 +246,94 @@ ol, ul {
 		text-decoration: none;
 	}
 
+	#rsvp {
+		padding: 0px 15px;
+		height: 940px;
+	}
+
 	#rsvp h4 {
 		color: #990629;
 	}
 
+	.atx-view h1 {
+		margin-top: -100px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.divider {
+		margin-top: -40px;
+		opacity: .2;
+	}
+
+	.padded {
+		margin: 25px auto;
+	}
+
+	.search-box {
+		width: 350px;
+		margin: 40px auto;
+	}
+
+	.search-box input {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.guests {
+		font-size: 18px;
+		padding-top: 28px;
+		clear: both;
+		margin-left: -27px;
+	}
+
+	.rsvp-btn {
+		font-family: 'Amatica SC', cursive;
+		font-size: 20px;
+		border: solid 1px #990629;
+		float: right;
+		vertical-align: middle;
+		margin-top: -14px;
+	}
+
+	.rsvp-btn:hover {
+		background-color: #990629;
+		color: #fff;
+	}
+
 	.content {
-		margin-top: 70px;
+		margin-top: 15px;
 	}
 
-	.test {
-		height: 400px;
+	.inner-content {
+		margin: 20px auto;
 	}
-
 }
 
 @media only screen and (min-width: 620px) {
 	nav ul li {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		padding: 18px;
 	}
 }
 
 @media only screen and (min-width: 992px) {
 	nav ul li {
-		font-size: 1.5em;
+		font-size: 1.3em;
 		padding: 25px;
+	}
+	.atx-view h1 {
+		padding-left: 70px;
+		text-align: left;
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	nav ul li {
-		font-size: 1.8em;
+		font-size: 1.5em;
 		padding: 32px;
+	}
+	#our-story, #reception {
+		background-color: #fff;
 	}
 }

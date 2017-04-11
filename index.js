@@ -2,6 +2,7 @@ var express = require('express');
 var server  = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+const glob = require('glob');
 
 var rsvpRouter = require('./routers/rsvp.router');
 
@@ -17,6 +18,22 @@ mongoose.connect(mongoURI);
 
 server.get('/', function(req, res){
   res.sendFile('index.html', {root: __dirname + '/public/html'});
+});
+
+server.get('/image-gallery', function(req, res){
+  glob('./public/images/image-gallery/*.jpg', function(err, files){
+    if(err){
+      res.status(500).json({
+        msg:'Your stuff is broke'
+      });
+    }
+    const images = files.map(function(file){
+      return file.slice(9);
+    });
+    res.status(200).json({
+      images: images
+    })
+  });
 });
 
 server.use(rsvpRouter);

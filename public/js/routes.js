@@ -10,6 +10,18 @@
         controller: 'HomeController',
         templateUrl: 'html/views/home.html',
       })
+      // .when('/registry', {
+      //   controller: '',
+      //   templateUrl: 'html/views/registry.html',
+      // })
+      .when('/gallery', {
+        controller: '',
+        templateUrl: 'html/views/gallery.html',
+      })
+      .when('/atx', {
+        controller: '',
+        templateUrl: 'html/views/atx.html',
+      })
       .otherwise({
         redirectTo: '/',
         restricted: {
