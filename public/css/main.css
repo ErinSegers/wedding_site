@@ -310,6 +310,24 @@ ol, ul {
 	}
 }
 
+.galleryItem img {
+	margin: 25px auto;
+}
+
+.galleryItem a{
+    display:block;
+    position:relative;
+    padding-bottom:75%;
+    overflow:hidden;
+    border-radius: 5px;
+}
+.galleryItem a img {
+    position:absolute;
+    width: 100%;
+    height:auto;
+    display:block;
+}
+
 @media only screen and (min-width: 620px) {
 	nav ul li {
 		font-size: 1.1em;

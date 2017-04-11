@@ -1,7 +1,11 @@
 <div class="gallery-view" ng-controller="HomeController">
-  <div class="row">
-    <div class="col-xs-6 col-sm-4 col-md-3 img-responsive img-full" ng-repeat="image in images">
-      <img ng-src="{{image}}" class="img-responsive img-full"/>
+  <div class="row content">
+    <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+      <div class="row inner-content">
+        <div class="col-xs-6 col-sm-4 col-md-3 img-responsive img-full galleryItem" ng-repeat="image in images">
+          <a ng-href="{{image}}"><img ng-src="{{image}}" class="img-responsive img-full"/></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
