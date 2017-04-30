@@ -6,7 +6,7 @@ const glob = require('glob');
 
 var rsvpRouter = require('./routers/rsvp.router');
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8090;
 var mongoURI = process.env.MONGOURI || require('./secrets').MONGOURI;
 
 server.use(express.static(__dirname + '/public'));

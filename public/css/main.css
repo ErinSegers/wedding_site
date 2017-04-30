@@ -183,12 +183,12 @@ ol, ul {
 
 	.hero {
 		z-index: 0;
-		margin-top: -5px;
+		margin-top: -10px;
 	}
 
 	#countdown {
-		padding: 40px 0;
-		margin-bottom: 200px;
+		padding: 25px 0;
+		margin-bottom: 240px;
 	}
 
 	#countdown h3 {
@@ -196,22 +196,12 @@ ol, ul {
 		display: block;
 	}
 
-	#our-story, #reception {
-		min-height: 1080px;
-		background-image: url('../images/div-background.png');
-		background-size: cover;
-		background-color: #990629;
-		color: #fff;
-		padding: 100px 15px 80px 15px;
-	}
-
 	#our-story h3 {
-		color: #ffffff;
+		color: #990629;
 	}
 
 	#ceremony {
 		height: auto;
-		padding: 0px 15px;
 	}
 
 	#ceremony h3 {
@@ -266,6 +256,14 @@ ol, ul {
 		opacity: .2;
 	}
 
+	.flower-divider {
+		margin-top: -30px;
+	}
+
+	.move-up {
+		margin-top: -230px;
+	}
+
 	.padded {
 		margin: 25px auto;
 	}
@@ -302,11 +300,8 @@ ol, ul {
 	}
 
 	.content {
-		margin-top: 15px;
-	}
-
-	.inner-content {
-		margin: 20px auto;
+		margin: 10px;
+		padding-bottom: 40px;
 	}
 }
 
@@ -326,6 +321,16 @@ ol, ul {
     width: 100%;
     height:auto;
     display:block;
+}
+
+.padding-40-above {
+	padding-top: 40px;
+}
+
+.subtitle {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Amatica SC', cursive;
 }
 
 @media only screen and (min-width: 620px) {
@@ -350,8 +355,5 @@ ol, ul {
 	nav ul li {
 		font-size: 1.5em;
 		padding: 32px;
-	}
-	#our-story, #reception {
-		background-color: #fff;
 	}
 }

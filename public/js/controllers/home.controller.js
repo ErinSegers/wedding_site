@@ -2,13 +2,16 @@
   angular.module('erinanddustin')
           .controller('HomeController', HomeController);
 
-  HomeController.$inject = ['$scope', 'RsvpService', '$http'];
+  HomeController.$inject = ['$scope', 'RsvpService', '$http', '$log'];
 
-  function HomeController($scope, RsvpService, $http){
+  function HomeController($scope, RsvpService, $http, $log){
   $scope.rsvps = [];
   $scope.update = update;
+  $scope.edit = edit;
   $scope.showList;
   $scope.images = [];
+  $scope.confirmRsvp = confirmRsvp;
+  $scope.editRsvp = {};
 
   getImages();
 
@@ -32,12 +35,25 @@
                   });
     }
 
-  function update(rsvp){
+    function edit(rsvp){
+      rsvp.edit = true;
+      $scope.editRsvp = rsvp;
+    }
+
+    function update(rsvp){
+      $log.debug('HAY BOI', rsvp);
       rsvp.edit = false;
       RsvpService.update(rsvp)
                   .then(function(response){
-                    getRsvps();
+                    $log.debug('RAYSPAWNCE', response);
+                    $log.debug('responseConfigData:', response.config.data);
+                    confirmRsvp(response.config.data);
                   });
+    }
+
+    function confirmRsvp(rsvp){
+      $log.debug('HAY GURL', rsvp);
+      rsvp.confirmRsvp = true;
     }
 
   }

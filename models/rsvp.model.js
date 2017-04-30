@@ -12,11 +12,11 @@ var rsvpSchema = mongoose.Schema({
   Attendees: {
     type: Number,
     required: true
-  },
-  Hotel: {
-    type: Boolean,
-    required: true
   }
+  // Hotel: {
+  //   type: Boolean,
+  //   required: true
+  // }
 });
 
 var Rsvp = mongoose.model('Rsvp', rsvpSchema);

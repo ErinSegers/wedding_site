@@ -13,8 +13,8 @@
     }
 
     function update(rsvp){
-        return $http.put(`${baseURL}/${rsvp._id}`, rsvp);
-      }
+      return $http.put(`${base}/${rsvp._id}`, rsvp);
+    }
 
     return {
       getAll: getAll,
