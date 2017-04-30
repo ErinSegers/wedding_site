@@ -38,6 +38,10 @@ ol, ul {
 	list-style: none;
 }
 
+a, a:hover, a:focus {
+	text-decoration: none;
+}
+
 .flex-container {
     display: -webkit-flex;
     display: -webkit-box;
@@ -52,6 +56,17 @@ ol, ul {
 }
 
 @media (min-width: 0px) {
+	.mobile {
+		display: block;
+		margin-right: 30px;
+		margin-top: 12px;
+		text-align: right;
+	}
+
+	.desktop {
+		display: none;
+	}
+
 	.nav-background {
 		background-image: url('../images/nav-bar.png');
 		background-repeat: no-repeat;
@@ -68,44 +83,39 @@ ol, ul {
 		font-family: 'Amatica SC', cursive;
 	}
 
-	nav ul {
-		text-align: center;
-		padding: 0px;
+	.nav-container {
+    display: inline-block;
+    cursor: pointer;
+	}
+
+	.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+	}
+
+	.mobile-menu {
+		position: absolute;
+		right: 0;
+	  margin-top: 40px;
+		padding-top: 10px;
+	  width: auto;
+	  height: auto;
+	  background: rgba(153,6,41,.8);
+	  z-index: 900;
+		border-radius: 2px;
 	}
 
 	nav li {
-		display: inline;
-		padding: 8px;
-		font-size: 1em;
+		font-size: 1.1em;
 		color: #fff;
 		white-space: nowrap;
+		padding: 12px;
 	}
 
-	nav a {
-		color: #fff;
-	}
-
-	nav a:hover {
-		color: #fff;
-		text-decoration: none;
-		font-weight: 700;
-	}
-
-	nav a:active {
-		color: #fff;
-		text-decoration: none;
-		font-weight: 700;
-	}
-
-	nav a:focus {
-		color: #fff;
-		text-decoration: none;
-		font-weight: 700;
-	}
-
-	nav a:visited {
-		color: #fff;
-		text-decoration: none;
+	.mobile a {
+		color: #ffffff;
 	}
 
 	.behind {
@@ -155,6 +165,14 @@ ol, ul {
 	}
 
 	.apple {
+		color: #990629;
+	}
+
+	.apple:hover {
+		color: #990629;
+	}
+
+	.apple:active {
 		color: #990629;
 	}
 
@@ -268,18 +286,50 @@ ol, ul {
 		margin: 25px auto;
 	}
 
-	.search-box {
-		width: 350px;
+	.rsvp p {
+		font-size: 16px;
+	}
+
+	.rsvp-box {
+		width: 300px;
 		margin: 40px auto;
 	}
 
-	.search-box input {
-		font-size: 18px;
+	.rsvp-box input {
+		font-size: 16px;
 		margin-bottom: 20px;
 	}
 
+	.rsvp-edit input {
+		margin-left: 10px;
+	}
+
+	.rsvp-box label {
+		padding: 8px;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.rsvp-box button {
+		font-family: 'Amatica SC', cursive;
+		font-size: 16px;
+		border: solid 1px #990629;
+		background-color: #fff;
+	}
+
+	.rsvp-box button:hover {
+		background-color: #990629;
+		color: #fff;
+	}
+
+	.form-control:focus {
+		border-color: #990629;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(153,6,41,.6);
+		-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(153,6,41,.6);
+	}
+
 	.guests {
-		font-size: 18px;
+		font-size: 16px;
 		padding-top: 28px;
 		clear: both;
 		margin-left: -27px;
@@ -287,7 +337,7 @@ ol, ul {
 
 	.rsvp-btn {
 		font-family: 'Amatica SC', cursive;
-		font-size: 20px;
+		font-size: 16px;
 		border: solid 1px #990629;
 		float: right;
 		vertical-align: middle;
@@ -297,11 +347,18 @@ ol, ul {
 	.rsvp-btn:hover {
 		background-color: #990629;
 		color: #fff;
+		outline: 0;
+		outline-color: #fff;
 	}
 
 	.content {
 		margin: 10px;
 		padding-bottom: 40px;
+	}
+
+	.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+		outline-color: #fff;
+		-webkit-focus-ring-color: #fff;
 	}
 }
 
@@ -334,9 +391,73 @@ ol, ul {
 }
 
 @media only screen and (min-width: 620px) {
-	nav ul li {
-		font-size: 1.1em;
-		padding: 18px;
+	.desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	nav ul {
+		text-align: center;
+		padding: 0px;
+	}
+
+	nav li {
+		display: inline;
+		font-size: 1em;
+		color: #fff;
+		white-space: nowrap;
+		padding: 12px;
+	}
+
+	nav a {
+		color: #fff;
+	}
+
+	nav a:hover {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	nav a:active {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	nav a:focus {
+		color: #fff;
+		text-decoration: none;
+		font-weight: 700;
+	}
+
+	nav a:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+	.rsvp-box {
+		width: 425px;
+	}
+
+	.rsvp-box input {
+		font-size: 24px;
+	}
+
+	.rsvp-box label {
+		font-size: 24px;
+	}
+
+	.rsvp-box button {
+		font-size: 24px;
+	}
+	.guests {
+		font-size: 24px;
+	}
+	.rsvp-btn {
+		font-size: 24px;
 	}
 }
 
@@ -345,6 +466,7 @@ ol, ul {
 		font-size: 1.3em;
 		padding: 25px;
 	}
+
 	.atx-view h1 {
 		padding-left: 70px;
 		text-align: left;

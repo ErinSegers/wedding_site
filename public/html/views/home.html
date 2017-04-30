@@ -133,22 +133,29 @@
         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
           <h2>Celebrate with us</h2>
           <h4 class="text-center">Find yourself and click RSVP</h4>
-          <div class="search-box" ng-hide='editRsvp.edit || editRsvp.confirmRsvp'>
+          <div class="rsvp-box" ng-hide='editRsvp.confirmRsvp || editRsvp.edit'>
             <input ng-keypress="onKeypress()" type="text" ng-model="selected" typeahead="rsvp for rsvp in rsvps track by $index | filter:$viewValue | limitTo:12" class="form-control" ng-keypress='log()'>
             <ul ng-if="showList">
               <li class="guests" ng-repeat="rsvp in rsvps | filter:{Guest:selected}">{{ rsvp.Guest }}
-              <button ng-click="edit(rsvp)" class="btn btn-default rsvp-btn">RSVP2</button>
+              <button ng-click="edit(rsvp)" class="btn btn-default rsvp-btn">RSVP</button>
               </li>
             </ul>
           </div>
-          <div ng-show='editRsvp.edit'>
+          <div class="rsvp-box rsvp-edit" ng-show='editRsvp.edit'>
+            <label for="attending">Will you be attending?</label>
             <input type="radio" value="yes" name="attending" ng-model='editRsvp.Attending'> Yes
             <input type="radio" value="no" name="attending" ng-model='editRsvp.Attending'> No
+            <label for="guests">Number of guests</label>
             <input type="number" name="guests" min="0" max="7" ng-model='editRsvp.Attendees'>
-            <button ng-click='update(editRsvp)'>Submit RSVP</button>
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <button class="text-center btn btn-default" ng-click='update(editRsvp)'>Submit RSVP</button>
+              </div>
+            </div>
           </div>
           <div ng-show='editRsvp.confirmRsvp'>
-            <p>{{ editRsvp.Guest }} is confirmed for {{ editRsvp.Attendees }} guests!</p>
+            <p class="text-center padding-40-above heavy">{{ editRsvp.Guest }} is confirmed for {{ editRsvp.Attendees }} guests!</p>
+            <p class="text-center heavy">Find hotel information <a href="#!/atx" class="apple">here</a></p>
           </div>
         </div>
       </div>
