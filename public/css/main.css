@@ -285,7 +285,7 @@
 	}
 
 	.atx-view h2 {
-		margin: 40px auto 20px auto;
+		margin: 40px auto 10px auto;
 	}
 
 	.atx-view li {
@@ -296,7 +296,7 @@
 	}
 
 	.atx-view p {
-		padding: 4px 0 8px 0;
+		padding: 4px 0 10px 0;
 		font-size: 1.4em;
 	}
 
@@ -413,6 +413,10 @@
     width: 100%;
     height:auto;
     display:block;
+}
+
+.padding-20-above {
+	padding-top: 20px;
 }
 
 .padding-40-above {
