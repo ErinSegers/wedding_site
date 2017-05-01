@@ -299,8 +299,8 @@ a, a:hover, a:focus {
 	}
 
 	.atx-view p {
-		padding: 3px 0 8px 0;
-		font-size: .9em;
+		padding: 4px 0 8px 0;
+		font-size: 1.1em;
 	}
 
 	.divider {
@@ -514,6 +514,11 @@ a, a:hover, a:focus {
 	.atx-view h1 {
 		padding-left: 70px;
 		text-align: left;
+	}
+
+	.atx-view p {
+		padding: 3px 0 8px 0;
+		font-size: .9em;
 	}
 
 }
