@@ -1,5 +1,13 @@
-<div class="gallery-view" ng-controller="HomeController">
-  <div class="row content">
+<div class="gallery-view" ng-controller="HomeController" ng-init="engagementPhotos = true">
+  <div class="row padding-40-above">
+    <div class="col-xs-6 col-md-3 col-md-offset-3">
+      <h3 class="text-center" ng-click="engagementPhotos = !engagementPhotos" ng-class="{ 'apple': engagementPhotos }">Engagement Photos</h3>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <h3 class="text-center" ng-click="engagementPhotos = !engagementPhotos" ng-class="{ 'apple': !engagementPhotos }">Wedding Photos</h3>
+    </div>
+  </div>
+  <div class="row content" ng-show="engagementPhotos">
     <div class="col-xs-12 col-lg-10 col-lg-offset-1">
       <div class="row inner-content">
         <div class="col-xs-6 col-sm-4 col-md-3 img-responsive img-full galleryItem" ng-repeat="image in images">
@@ -8,5 +16,8 @@
       </div>
       <p class="apple heavy">Photo credit: <a href="http://www.arielleimages.com/" target="_blank">Arielle Images</a></p>
     </div>
+  </div>
+  <div class="row content" ng-hide="engagementPhotos">
+    <h5 class="text-center padding-40-above">Check back after the wedding!</h5>
   </div>
 </div>
