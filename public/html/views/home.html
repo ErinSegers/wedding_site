@@ -153,7 +153,7 @@
           <h2>Celebrate with us</h2>
           <h4 class="text-center">Find yourself and click RSVP</h4>
           <div class="rsvp-box" ng-hide='editRsvp.confirmRsvp || editRsvp.edit'>
-            <input ng-keypress="onKeypress()" type="text" ng-model="selected" typeahead="rsvp for rsvp in rsvps track by $index | filter:$viewValue | limitTo:12" class="form-control" ng-keypress='log()'>
+            <input ng-click="onKeypress()" type="text" ng-model="selected" typeahead="rsvp for rsvp in rsvps track by $index | filter:$viewValue | limitTo:12" class="form-control" ng-keypress='log()'>
             <ul ng-if="showList">
               <li class="guests" ng-repeat="rsvp in rsvps | filter:{Guest:selected}">{{ rsvp.Guest }}
               <button ng-click="edit(rsvp)" class="btn btn-default rsvp-btn">RSVP</button>
