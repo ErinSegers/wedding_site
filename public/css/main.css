@@ -24,7 +24,7 @@ footer, header, hgroup, menu, section {
 	display: block;
 }
 body {
-	line-height: 1.1;
+	line-height: 1.2;
 	/*font-family: 'Josefin Sans', sans-serif;*/
 	/*font-family: 'Amatic SC', cursive;*/
 	/*font-family: 'Bubbler One', sans-serif;*/
@@ -278,6 +278,7 @@ a, a:hover, a:focus {
 
 	.atx-view {
 		padding-bottom: 30px;
+		font-size: 1.2em;
 	}
 
 	.atx-view h1 {
@@ -292,7 +293,7 @@ a, a:hover, a:focus {
 
 	.atx-view li {
 		list-style: circle;
-		font-size: 1.1em;
+		font-size: 1.2em;
 		padding-top: 12px;
 		font-weight: 400;
 	}
