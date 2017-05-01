@@ -32,7 +32,7 @@ body {
 	/*font-family: 'Pompiere', cursive;*/
 	font-family: 'Flamenco', cursive;
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1.8em;
 }
 ol, ul {
 	list-style: none;
@@ -109,7 +109,7 @@ a, a:hover, a:focus {
 	}
 
 	nav li {
-		font-size: 1.4em;
+		font-size: 1.8em;
 		color: #fff;
 		white-space: nowrap;
 		padding: 12px;
@@ -144,18 +144,18 @@ a, a:hover, a:focus {
 
 	h4 {
 		font-size: 2em;
-		padding: 5px;
+		padding: 5px 0 15px;
 		font-family: 'Amatica SC', cursive;
 	}
 
 	h5 {
-		font-size: 1.6em;
+		font-size: 1.9em;
 		padding: 5px;
 		font-family: 'Amatica SC', cursive;
 	}
 
 	p {
-		font-size: 1.4em;
+		font-size: 1.8em;
 		padding: 10px 25px;
 		line-height: 1.3em;
 	}
