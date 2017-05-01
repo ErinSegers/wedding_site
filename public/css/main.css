@@ -109,7 +109,7 @@ a, a:hover, a:focus {
 	}
 
 	nav li {
-		font-size: 1.1em;
+		font-size: 1.2em;
 		color: #fff;
 		white-space: nowrap;
 		padding: 12px;
@@ -415,6 +415,32 @@ a, a:hover, a:focus {
 }
 
 @media only screen and (min-width: 620px) {
+
+	.rsvp-box {
+		width: 425px;
+	}
+
+	.rsvp-box input {
+		font-size: 24px;
+	}
+
+	.rsvp-box label {
+		font-size: 24px;
+	}
+
+	.rsvp-box button {
+		font-size: 24px;
+	}
+	.guests {
+		font-size: 24px;
+	}
+	.rsvp-btn {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+
 	.desktop {
 		display: block;
 	}
@@ -430,10 +456,10 @@ a, a:hover, a:focus {
 
 	nav li {
 		display: inline;
-		font-size: 1em;
 		color: #fff;
 		white-space: nowrap;
-		padding: 12px;
+		font-size: 1.3em;
+		padding: 25px;
 	}
 
 	nav a {
@@ -461,34 +487,6 @@ a, a:hover, a:focus {
 	nav a:visited {
 		color: #fff;
 		text-decoration: none;
-	}
-	.rsvp-box {
-		width: 425px;
-	}
-
-	.rsvp-box input {
-		font-size: 24px;
-	}
-
-	.rsvp-box label {
-		font-size: 24px;
-	}
-
-	.rsvp-box button {
-		font-size: 24px;
-	}
-	.guests {
-		font-size: 24px;
-	}
-	.rsvp-btn {
-		font-size: 24px;
-	}
-}
-
-@media only screen and (min-width: 992px) {
-	nav ul li {
-		font-size: 1.3em;
-		padding: 25px;
 	}
 
 	.atx-view h1 {
