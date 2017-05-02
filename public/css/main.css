@@ -282,10 +282,16 @@
 		margin-top: -100px;
 		text-align: center;
 		color: #fff;
+		font-size: 3.8em;
 	}
 
 	.atx-view h2 {
 		margin: 40px auto 10px auto;
+		font-size: 3.6em;
+	}
+
+	h5 {
+		font-size: 2.5em;
 	}
 
 	.atx-view li {
@@ -298,6 +304,7 @@
 	.atx-view p {
 		padding: 4px 0 10px 0;
 		font-size: 1.6em;
+		text-align: center;
 	}
 
 	.push {
@@ -540,6 +547,7 @@
 	.atx-view p {
 		padding: 3px 0 8px 0;
 		font-size: .9em;
+		text-align: left;
 	}
 
 	.atx-view li {
