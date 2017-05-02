@@ -62,7 +62,7 @@
 		display: block;
 		margin-right: 30px;
 		margin-top: 12px;
-		text-align: right;
+		text-align: center;
 	}
 
 	.desktop {
@@ -102,7 +102,7 @@
 		right: 0;
 	  margin-top: 40px;
 		padding-top: 10px;
-	  width: auto;
+	  width: 100%;
 	  height: auto;
 	  background: rgba(153,6,41,.8);
 	  z-index: 900;
@@ -110,10 +110,10 @@
 	}
 
 	nav li {
-		font-size: 3em;
+		font-size: 3.6em;
 		color: #fff;
 		white-space: nowrap;
-		padding: 12px;
+		padding: 16px;
 	}
 
 	.mobile a {
@@ -125,7 +125,7 @@
 	}
 
 	h1 {
-		font-size: 3.3em;
+		font-size: 3.6em;
 		text-align: center;
 		padding-top: 20px;
 		font-family: 'Amatica SC', cursive;
@@ -133,28 +133,28 @@
 	}
 
 	h2 {
-		font-size: 3em;
+		font-size: 3.3em;
 		text-align: center;
 		font-family: 'Amatica SC', cursive;
 		color: #000;
 	}
 
 	h3 {
-		font-size: 2.2em;
+		font-size: 2.8em;
 		padding: 7px;
 		font-family: 'Amatica SC', cursive;
 		color: #000;
 	}
 
 	h4 {
-		font-size: 2em;
+		font-size: 2.2em;
 		padding: 5px 0 15px;
 		font-family: 'Amatica SC', cursive;
 		color: #000;
 	}
 
 	h5 {
-		font-size: 1.9em;
+		font-size: 2em;
 		padding: 5px 0 12px;
 		font-family: 'Amatica SC', cursive;
 		color: #000;
@@ -290,14 +290,14 @@
 
 	.atx-view li {
 		list-style: circle;
-		font-size: 1.8em;
+		font-size: 2em;
 		padding-top: 12px;
 		font-weight: 400;
 	}
 
 	.atx-view p {
 		padding: 4px 0 10px 0;
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 
 	.push {
@@ -510,6 +510,26 @@
 	nav a:visited {
 		color: #fff;
 		text-decoration: none;
+	}
+
+	h1 {
+		font-size: 3.3em;
+	}
+
+	h2 {
+		font-size: 3em;
+	}
+
+	h3 {
+		font-size: 2.2em;
+	}
+
+	h4 {
+		font-size: 2em;
+	}
+
+	h5 {
+		font-size: 1.9em;
 	}
 
 	.atx-view h1 {
