@@ -22,6 +22,10 @@
         controller: '',
         templateUrl: 'html/views/atx.html',
       })
+      .when('/registry', {
+        controller: '',
+        templateUrl: 'html/views/registry.html',
+      })
       .otherwise({
         redirectTo: '/',
         restricted: {
