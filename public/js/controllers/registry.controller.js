@@ -6,7 +6,7 @@
 
   function RegistryController($scope, $window, $location, $route){
 
-    $scope.reloadRoute = function () {
+    $scope.reloadRoute = function() {
       $window.location.reload();
     }
   }
