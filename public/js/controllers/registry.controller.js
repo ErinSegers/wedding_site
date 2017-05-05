@@ -12,7 +12,7 @@
       $scope.startCount = $scope.startCount + 1;
       timeout = $timeout(function() {
         $window.location.reload();
-      }, 2500);
+      }, 5000);
       $scope.stopTimeout;
     }
 
