@@ -6,9 +6,19 @@
 
   function RegistryController($scope, $window, $location, $route, $timeout){
 
-    $scope.reloadRoute = $timeout(function() {
-      $window.location.reload();
-    }, 3000, 1);
+    $scope.startCount = 0;
+
+    $scope.reloadRoute = function() {
+      $scope.startCount = $scope.startCount + 1;
+      timeout = $timeout(function() {
+        $window.location.reload();
+      }, 1000);
+      $scope.stopTimeout;
+    }
+
+    $scope.stopTimeout = function() {
+      $timeout.cancel(timeout);
+    }
 
   }
 
