@@ -12,7 +12,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
   </head>
   <body>
-    <header id="top" ng-controller="RegistryController">
+    <!-- <header id="top" ng-controller="RegistryController"> -->
+    <header id="top" >
       <div class="nav-background">
       </div>
       <nav class="row mobile hidden-md hidden-lg hidden-xl">
@@ -29,7 +30,8 @@
             <li><a href="#!/#ceremony" ng-click="menu = !menu" du-smooth-scroll du-scrollspy duration='2000'>Ceremony</a></li>
             <li><a href="#!/#reception" ng-click="menu = !menu" du-smooth-scroll du-scrollspy duration='2000'>Reception</a></li>
             <li><a href="#!/#rsvp" ng-click="menu = !menu" du-smooth-scroll du-scrollspy duration='2000'>RSVP</a></li>
-            <li><a href="#!/registry" ng-click="menu = !menu; reloadRoute()">Registry</a></li>
+            <!-- <li><a href="#!/registry" ng-click="menu = !menu; reloadRoute()">Registry</a></li> -->
+            <li><a href="https://www.zola.com/registry/dustinanderin" target="_blank">Registry</a></li>
             <li><a href="#!/gallery" ng-click="menu = !menu">Gallery</a></li>
             <li><a href="#!/atx" ng-click="menu = !menu">Visit Austin</a></li>
           </ul>
@@ -43,7 +45,8 @@
               <li><a href="#!/#ceremony" du-smooth-scroll du-scrollspy duration='2000'>Ceremony</a></li>
               <li><a href="#!/#reception" du-smooth-scroll du-scrollspy duration='2000'>Reception</a></li>
               <li><a href="#!/#rsvp" du-smooth-scroll du-scrollspy duration='2000'>RSVP</a></li>
-              <li><a href="#!/registry" ng-click="reloadRoute()">Registry</a></li>
+              <!-- <li><a href="#!/registry" ng-click="reloadRoute()">Registry</a></li> -->
+              <li><a href="https://www.zola.com/registry/dustinanderin" target="_blank">Registry</a></li>
               <li><a href="#!/gallery">Gallery</a></li>
               <li><a href="#!/atx">Visit Austin</a></li>
             </ul>
@@ -60,8 +63,8 @@
   <script src="js/services/rsvp.service.js"></script>
   <script src="js/controllers/home.controller.js"></script>
   <script src="js/controllers/countdown.directive.js"></script>
-  <script src="js/controllers/registry.controller.js"></script>
-  <script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script>
+  <!-- <script src="js/controllers/registry.controller.js"></script> -->
+  <!-- <script>!function(e,t,n){var s,a=e.getElementsByTagName(t)[0];e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))}(document,"script","zola-wjs");</script> -->
   <script src="js/controllers/gallery.controller.js"></script>
   </body>
 </html>
