@@ -264,6 +264,8 @@
 		color: #990629;
 		font-size: 2.2em;
 		font-family: 'Amatica SC', cursive;
+		font-size: 100%;
+		padding: 5px 0 15px;
 	}
 
 	#rsvp {
@@ -542,7 +544,7 @@
 	}
 
 	.h4 {
-		font-size: 2em;
+		font-size: 1.4em;
 	}
 
 	h5 {
