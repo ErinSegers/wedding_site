@@ -246,8 +246,8 @@
           </div>
           <div class="rsvp-box rsvp-edit" ng-show='editRsvp.edit'>
             <label for="attending">Will you be attending?</label>
-            <input type="radio" value="yes" name="attending" ng-model='editRsvp.Attending'> Yes
-            <input type="radio" value="no" name="attending" ng-model='editRsvp.Attending'> No
+            <input type="radio" value="1" name="attending" ng-model='editRsvp.Attending'> Yes
+            <input type="radio" value="0" name="attending" ng-model='editRsvp.Attending'> No
             <label for="guests">Number of guests</label>
             <input type="number" name="guests" min="0" max="7" ng-model='editRsvp.Attendees'>
             <div class="row">
