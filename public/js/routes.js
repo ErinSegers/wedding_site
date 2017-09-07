@@ -10,10 +10,6 @@
         controller: 'HomeController',
         templateUrl: 'html/views/home.html',
       })
-      // .when('/registry', {
-      //   controller: '',
-      //   templateUrl: 'html/views/registry.html',
-      // })
       .when('/gallery', {
         controller: '',
         templateUrl: 'html/views/gallery.html',
@@ -25,6 +21,10 @@
       .when('/registry', {
         controller: '',
         templateUrl: 'html/views/registry.html',
+      })
+      .when('/rehearsal', {
+        controller: '',
+        templateUrl: 'html/views/rehearsal.html',
       })
       .otherwise({
         redirectTo: '/',
